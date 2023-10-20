@@ -11,14 +11,19 @@
             <div class="header__meta">
                 <a href="/" class="header__logo">
                     <img class="header__logo-img" src="./images/logo.svg" alt="Логотип сайта" />
-                    <span class="header__site-name">megaкрут</span>
+                    <span class="header__site-name"><span class="main-text">mega</span>крут</span>
                 </a>
-                <p class="header__description">Интернет магазин неосязаемых ценностей. Купи и радуйся.</p>
+                <p class="header__description">Интернет магазин неосязаемых ценностей<br />Купи и радуйся <span class="main-text">motherfucker</span></p>
             </div>
-            <button class="cart">
-                <img src="./images/cart.svg" alt="Корзина" class="cart__icon" />
-                <div class="cart__items">2</div>
-            </button>
+            <div class="header__user-items">
+                <a href="#0" class="authorization">
+                    <img src="https://avatars.mds.yandex.net/get-yapic/0/0-0/islands-middle" alt="Авторизация" class="authorization__icon" />
+                </a>
+                <button class="cart">
+                    <img src="./images/cart.svg" alt="Корзина" class="cart__icon" />
+                    <div class="cart__items">2</div>
+                </button>
+            </div>
         </header>
         <aside class="navigation">
             <nav class="navigation__bar">
@@ -34,211 +39,203 @@
             </nav>
         </aside>
         <main class="main">
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+            <ul class="card">
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">1230</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">9</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__info">
-                    <div class="card__name"></div>
-                    <div class="card__price">
-                        <div class="card__points">
-                            <img src="./images/points.svg" alt="Баллы" class="card__points-icon"><span class="card__points-numbers">+99</span>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                         </div>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/confidence.svg" alt="Уверенность в себе" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Уверенность в себе</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">199 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/wealth.svg" alt="Богатство" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Богатство</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">19 999 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/conscience.svg" alt="Внутренняя мантра, космический настрой" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Бесконечно чистая совесть</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">999 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/wealth.svg" alt="Богатство" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Богатство</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">19 999 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/confidence.svg" alt="Уверенность в себе" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Уверенность в себе</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">199 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/wealth.svg" alt="Богатство" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Богатство</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">99 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                </li>
+                <li class="card__list">
+                    <div class="card__image"></div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__price">
+                            <div class="card__points">
+                                <div class="card__points-container"><img src="./images/points.svg" alt="Баллы" class="card__points-icon" /><span class="card__points-numbers">99</span></div>
+                            </div>
+                            <span class="card__cost">129 999 ₽</span>
+                            <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/conscience.svg" alt="Внутренняя мантра, космический настрой" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Бесконечно чистая совесть</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">19 999 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <img src="./images/attractiveness.svg" alt="Мега привлекательность" class="card__image" />
-                <div class="card__info">
-                    <h4 class="card__name">Мега привлекательность</h4>
-                    <div class="card__price">
-                        <span class="card__points">+99 б.</span>
-                        <span class="card__cost">129 999 ₽</span>
-                        <button class="card__button"><img src="./images/card__button.svg" alt="Иконка корзины" class="card__button-icon" /></button>
-                    </div>
-                </div>
-            </article>
+                </li>
+            </ul>
         </main>
     </body>
 </html>

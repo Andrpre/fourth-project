@@ -3,6 +3,8 @@
     --main-bg-color: #ffffff;
     --buy-bitton: linear-gradient(90deg, #a636f1 0%, #4255ff 49.48%, #24b2f4 100%);
     --buy-bitton-hover: linear-gradient(90deg, #f136c8 0%, #ff4242 49.48%, #f4ab24 100%);
+    --stub: linear-gradient(135deg, #ddd 0%, #fcfcfc 65%, #ddd 100%);
+    --main-text: rgb(0, 109, 218);
 }
 
 * {
@@ -43,6 +45,11 @@ li {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+}
+
+.main-text {
+    font-weight: 700;
+    color: var(--main-text, blue);
 }
 
 .header {
@@ -104,6 +111,21 @@ li {
     font-size: 13px;
     color: #aaa;
     text-transform: lowercase;
+    line-height: normal;
+}
+
+.header__user-items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.authorization{
+    width: 42px;
+    height: 42px;
+}
+
+.authorization__icon{
 }
 
 .cart{
@@ -115,10 +137,15 @@ li {
     cursor: pointer;
     background-image:  linear-gradient(90deg, #a636f1 0%, #4255ff 49.48%, #24b2f4 100%);
     position: relative;
+    transition: 0.3s;
+}
+
+.cart:hover{
+    box-shadow: 0 0 0px 3px rgb(255 0 247 / 25%);
 }
 
 .cart:hover .cart__icon{
-    animation: 1.2s ease-in-out 0s normal none infinite running cart__icon-animation;
+    animation: 1.2s ease-in-out 0s normal none running cart__icon-animation;
 }
 
 @keyframes cart__icon-animation {
@@ -178,7 +205,7 @@ li {
 .navigation__list-item-link {
     display: inline-block;
     background-color: #f1f1f1;
-    color: #333;
+    color: #000;
     padding: 10px 20px;
     border-radius: 10px;
     width: 100%;
@@ -190,22 +217,54 @@ li {
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.247);
 }
 
+.navigation__list-item-link:hover::before{
+    content: '';
+    background-image: url(../images/fuck-icon.svg);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    transform: rotate(335deg);
+    animation: 1.2s ease-in-out 0s normal none running fuck__icon-animation;
+}
+
+@keyframes fuck__icon-animation {
+    0%,
+    50%,
+    100% {
+        transform: rotate(335deg);
+    }
+    10%,
+    30% {
+        transform: rotate(330deg);
+    }
+    20%,
+    40% {
+        transform: rotate(340deg);
+    }
+}
+
 .navigation__list-item-link_active {
     background-color: #000000;
     color: #ffffff;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: flex-start;
-    gap: 20px;
     padding: 30px;
     background-color: var(--main-bg-color);
     border-radius: var(--main-border-radius);
 }
 
 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.card__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,32 +277,15 @@ li {
     transition: 0.3s;
 }
 
-.card:hover {
+.card__list:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 20px #00000065;
-}
-
-.advertising {
-    background-color: #f5f5f5;
-    box-shadow: none;
-}
-
-.advertising__banner {
-    width: 100%;
-    border-radius: 10px;
-    height: 215px;
-    object-fit: cover;
-}
-
-.advertising:hover {
-    transform: translateY(0);
-    box-shadow: none;
 }
 
 .card__image {
     width: 100px;
     height: 100px;
-    background-color: #eee;
+    background-image: var(--stub, #eee);
     border-radius: 10px;
 }
 
@@ -256,7 +298,7 @@ li {
 }
 
 .card__name {
-    background-color: #eee;
+    background-image: var(--stub, #eee);
     border-radius: 10px;
     width: 100%;
     height: 20px;
@@ -264,16 +306,20 @@ li {
 
 .card__price {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1.3fr 1fr;
     align-items: center;
 }
 
 .card__points{
-    display: flex;
-    align-items: center;
+    height: 25px;
+}
+
+.card__points-container{
+    display: inline-flex;
     background-color: #000;
     border-radius: 20px;
-    height: 25px;
+    padding: 0 10px 0 0;
+    gap: 3px;
 }
 
 .card__points-icon{
@@ -318,4 +364,20 @@ li {
 .card__button-icon {
     width: 16px;
     transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+        
+    .card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 900px) {
+        
+    .card {
+        grid-template-columns: 1fr;
+    }
+
 }
